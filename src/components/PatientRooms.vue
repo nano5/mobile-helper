@@ -10,13 +10,14 @@
             <div class="room" v-for="roomItem in roomItems">
                 <div class="room-number-box">
                     <div class="room-number">
-                        <h1>
-                            {{roomItem.roomNumber}}
-                        </h1>
+                        {{roomItem.roomNumber}}
                     </div>
                 </div>
-                <div class="room-info-box">
-                    <div class="room-info">
+                <div class="room-message-box">
+                    <div class="room-message-time">
+                        1:27 PM
+                    </div>
+                    <div class="room-message">
                         message: {{roomItem.message}}asdasdasdasfadsfasdasdasdfasdfas
                         dfasdfasdfasddagdafggqergqerfasd
                     </div>
@@ -88,9 +89,7 @@
 
 <style scoped>
     .box {
-        background-color: #e6ffff;
         overflow: auto;
-        border: solid red;
         /*float: left;*/
         width: 100%;
         height: auto;
@@ -98,7 +97,6 @@
 
     #top {
         top: 0px;
-        background-color: white;
         position: fixed;
         width: 100%;
         z-index: 10;
@@ -107,20 +105,20 @@
     .room {
         margin: 0px;
         padding: 0px;
-        border-bottom: solid red;
+        border-bottom: 1px solid lightgrey;
         width: 100%;
         float: left;
         clear: left;
     }
 
     .room-number-box {
-        border-right: solid red;
         width: 10%;
         height: 100%;
         float: left;
     }
 
     .room-number {
+        color: #0352fc;
         display: inline-block;
         position: relative;
         left: 50%;
@@ -128,18 +126,29 @@
         transform: translate(-50%, -50%);
     }
 
-    .room-info-box {
+    .room-message-box {
         /* may need to adjust later*/
         width: 87%;
         height: 100%;
         float: left;
     }
 
-    .room-info {
+    .room-message {
+        float: none;
         display: inline-block;
+        color: dimgrey;
         position: relative;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+    }
+
+    .room-message-time {
+        float: right;
+        color: dimgrey;
+        position: relative;
+        right: 20%;
+        top: 10%;
+        display: inline-block;
     }
 </style>
