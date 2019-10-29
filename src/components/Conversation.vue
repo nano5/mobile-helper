@@ -52,8 +52,6 @@
 
 <style scoped>
     .conversation1 {
-        float: left;
-        margin-top: 10%;
         width: 100%;
         overflow-wrap: break-word;
     }
@@ -71,12 +69,15 @@
     }
 
     .bubble1 {
+        float: left;
+        margin-top: 10%;
         color: white;
         display: inline-block;
         background-color: #46ab68;
         border-radius: 25px;
         padding: 10px;
         max-width: 80%;
+        overflow-wrap: break-word;
     }
 
     .bubble2 {
