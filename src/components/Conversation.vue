@@ -68,11 +68,9 @@
     }
 
     .bubble1 {
-        float: left;
-        clear: left;
+        float: right;
         margin-top: 10%;
         color: white;
-        display: inline-block;
         background-color: #46ab68;
         border-radius: 25px;
         padding: 10px;
@@ -81,10 +79,8 @@
     }
 
     .bubble2 {
-        float: right;
-        clear: right;
+        float: left;
         margin-top: 10%;
-        display: inline-block;
         background-color: #e8dddc;
         border-radius: 25px;
         padding: 10px;
