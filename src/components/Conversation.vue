@@ -52,14 +52,13 @@
 
 <style scoped>
     .conversation1 {
+        overflow-y: auto;
         width: 100%;
-        overflow-wrap: break-word;
     }
 
     .conversation2 {
         overflow-y: auto;
         width: 100%;
-        overflow-wrap: break-word;
     }
 
     .conversation-box {
@@ -70,6 +69,7 @@
 
     .bubble1 {
         float: left;
+        clear: left;
         margin-top: 10%;
         color: white;
         display: inline-block;
@@ -82,6 +82,7 @@
 
     .bubble2 {
         float: right;
+        clear: right;
         margin-top: 10%;
         display: inline-block;
         background-color: #e8dddc;
