@@ -96,15 +96,12 @@
     }
 
     #top {
-        top: 0px;
         position: fixed;
         width: 100%;
         z-index: 10;
     }
 
     .room {
-        margin: 0px;
-        padding: 0px;
         border-bottom: 1px solid lightgrey;
         width: 100%;
         float: left;
@@ -112,7 +109,7 @@
     }
 
     .room-number-box {
-        width: 10%;
+        width: 15%;
         height: 100%;
         float: left;
     }
@@ -128,7 +125,7 @@
 
     .room-message-box {
         /* may need to adjust later*/
-        width: 87%;
+        width: 82%;
         height: 100%;
         float: left;
     }
@@ -139,7 +136,7 @@
         color: dimgrey;
         position: relative;
         left: 50%;
-        top: 50%;
+        top: 40%;
         transform: translate(-50%, -50%);
     }
 
