@@ -15,6 +15,32 @@
                 sup my name is big boi
             </div>
         </div>
+        <div class="conversation2">
+            <div class="bubble2">
+                111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+            </div>
+        </div>
+        <div class="conversation2">
+            <div class="bubble2">
+                2222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222
+            </div>
+        </div>
+        <div class="conversation1">
+            <div class="bubble1">
+                1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+            </div>
+        </div>
+        <div class="conversation1">
+            <div class="bubble1">
+                22222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222
+            </div>
+        </div>
+        <div class="conversation2">
+            <div class="bubble2">
+                bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+                bbbbbbbbbbbbbbbbb
+            </div>
+        </div>
     </div>
 </template>
 
@@ -27,21 +53,21 @@
 <style scoped>
     .conversation1 {
         float: left;
-        position: relative;
         margin-top: 10%;
         width: 100%;
+        overflow-wrap: break-word;
     }
+
     .conversation2 {
-        float: right;
-        position: relative;
-        margin-top: 10%;
+        overflow-y: auto;
+        width: 100%;
+        overflow-wrap: break-word;
     }
 
     .conversation-box {
         margin: auto;
         width: 100%;
         overflow-y: auto;
-        overflow-x: hidden;
     }
 
     .bubble1 {
@@ -50,12 +76,23 @@
         background-color: #46ab68;
         border-radius: 25px;
         padding: 10px;
+        max-width: 80%;
     }
 
     .bubble2 {
+        float: right;
+        margin-top: 10%;
         display: inline-block;
         background-color: #e8dddc;
         border-radius: 25px;
         padding: 10px;
+        max-width: 80%;
+        overflow-wrap: break-word;
+    }
+
+    .wrap {
+        word-wrap: break-word;
+        width: 100%;
+        display: inline-block;
     }
 </style>
