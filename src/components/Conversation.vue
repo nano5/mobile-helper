@@ -41,10 +41,13 @@
                 bbbbbbbbbbbbbbbbb
             </div>
         </div>
-        <div class="input-bubble">
-            <input type="text" name="message" class="input-style" placeholder="enter message">
+<!--        <div class="input-bubble">-->
+            <!--            <input type="text" name="message" class="input-style" placeholder="enter message">-->
+<!--                <textarea class="input-bubble" placeholder="Type your message...">-->
+
+<!--                </textarea>-->
             <div class="send-button-style">send</div>
-        </div>
+<!--        </div>-->
     </div>
 </template>
 
@@ -71,8 +74,10 @@
         margin-top: 10%;
         background-color: #e8dddc;
         border-radius: 25px;
-        width: 100%;
+        width: 95%;
+        margin-left: 2.5%;
         height: 30px;
+        resize: none;
         overflow-y: auto;
     }
 
