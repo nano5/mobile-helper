@@ -41,6 +41,10 @@
                 bbbbbbbbbbbbbbbbb
             </div>
         </div>
+        <div class="input-bubble">
+            <input type="text" name="message" class="input-style" placeholder="enter message">
+            <div class="send-button-style">send</div>
+        </div>
     </div>
 </template>
 
@@ -52,13 +56,43 @@
 
 <style scoped>
     .conversation1 {
+        margin-top: 10%;
         overflow-y: auto;
         width: 100%;
     }
 
     .conversation2 {
+        margin-top: 10%;
         overflow-y: auto;
         width: 100%;
+    }
+
+    .input-bubble {
+        margin-top: 10%;
+        background-color: #e8dddc;
+        border-radius: 25px;
+        width: 100%;
+        height: 30px;
+        overflow-y: auto;
+    }
+
+    .input-style {
+        width: 75%;
+        margin-left: 5%;
+        position: relative;
+        top: 50%;
+        border: hidden;
+        transform: translateY(-50%);
+        background-color: #e8dddc;
+    }
+
+    .send-button-style {
+        display: inline-block;
+        float: right;
+        position: relative;
+        margin-right: 5%;
+        top: 50%;
+        transform: translateY(-50%);
     }
 
     .conversation-box {
@@ -69,7 +103,6 @@
 
     .bubble1 {
         float: right;
-        margin-top: 10%;
         color: white;
         background-color: #46ab68;
         border-radius: 25px;
@@ -80,7 +113,6 @@
 
     .bubble2 {
         float: left;
-        margin-top: 10%;
         background-color: #e8dddc;
         border-radius: 25px;
         padding: 10px;
